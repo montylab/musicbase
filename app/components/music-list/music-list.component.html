@@ -1,0 +1,21 @@
+
+
+<div class="wrap" [class.loading]="isLoading">
+    <h2>Playlist</h2>
+    <table class="musicList">
+        <tr [class.desc]="order==-1">
+            <th (click)="sortBy('singer')" [class.ordered]="sort=='singer'">Singer</th>
+            <th (click)="sortBy('song')" [class.ordered]="sort=='song'">Song</th>
+            <th (click)="sortBy('genre')" [class.ordered]="sort=='genre'">Genre</th>
+            <th (click)="sortBy('year')" [class.ordered]="sort=='year'">Year</th>
+        </tr>
+        <tr *ngFor="let song of music">
+            <td>{{song.singer}}</td>
+            <td>{{song.song}}</td>
+            <td>{{song.genre}}</td>
+            <td>{{song.year}}</td>
+        </tr>
+    </table>
+
+    <div class="loader" ></div>
+</div>

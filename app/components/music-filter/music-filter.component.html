@@ -1,0 +1,27 @@
+<h2>Filter</h2>
+<div class="filter-box">
+    <div class="filter-group">
+        <label>Singer</label>
+        <select id="filter-singer" (change)="onFiltersChange($event, 'singer')" [(ngModel)]="singer">
+            <option value="All">All</option>
+            <option *ngFor="let option of filters.singers" value="{{option.singer}}">{{option.singer}}</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label>Genre</label>
+        <select id="filter-genre" (change)="onFiltersChange($event, 'genre')" [(ngModel)]="genre">
+            <option value="All">All</option>
+            <option *ngFor="let option of filters.genres" value="{{option.genre}}">{{option.genre}}</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label>Year</label>
+        <select id="filter-year" (change)="onFiltersChange($event, 'year')" [(ngModel)]="year">
+            <option value="All">All</option>
+            <option *ngFor="let option of filters.years" value="{{option.year}}">{{option.year}}</option>
+        </select>
+    </div>
+
+</div>

@@ -1,0 +1,17 @@
+.filter-box {
+    background: lightgrey;
+    padding: 20px;
+    display: inline-block;
+}
+
+.filter-group {
+    margin-bottom: 10px;
+}
+
+.filter-group label {
+    width: 100%;
+}
+
+.filter-group select {
+    width: 100%;
+}

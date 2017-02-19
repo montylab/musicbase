@@ -1,0 +1,9 @@
+h1 {
+    color: white;
+    background: darkgray;
+    padding: 20px;
+}
+
+.wrapper        {top: 100px; margin: 0 auto; max-width: 1200px;}
+.musicList      {width: 75%; margin-right: calc(4% - 4px); display: inline-block; vertical-align:top;}
+.musicFilter    {width: 20%; display: inline-block; vertical-align:top;}
